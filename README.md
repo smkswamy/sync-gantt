@@ -1,19 +1,21 @@
-# 🎈 Blank app template
+# streamlit-custom-component
 
-A simple Streamlit app template for you to modify!
+Streamlit component that allows you to do X
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Installation instructions
 
-### How to run it on your own machine
+```sh
+pip install streamlit-custom-component
+```
 
-1. Install the requirements
+## Usage instructions
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+```python
+import streamlit as st
 
-2. Run the app
+from syncfusion_gantt_component import syncfusion_gantt_component
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+value = syncfusion_gantt_component()
+
+st.write(value)
+```
